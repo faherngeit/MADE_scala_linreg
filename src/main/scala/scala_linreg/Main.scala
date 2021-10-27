@@ -25,8 +25,8 @@ object Main {
       --train         Activate train mode
       --test          Activate test mode
       -d, --dataset   Path to dataset, required option
-      -t, -- target   Path to target values for train dataset
-      -m, --model     Path to pretrained model
+      -t, --target   Path to target values for train dataset
+      -m, --model     Path to pretrained model, requierd in test mode
       """.stripMargin
   val builder = OParser.builder[Config]
   val parser1 = {
